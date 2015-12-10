@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for script/List.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">script/List.js</span></h1>
+    <h2>
+        Statements: <span class="metric">59.32% <small>(35 / 59)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">88.24% <small>(15 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">56.25% <small>(9 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">59.32% <small>(35 / 59)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">script/</a> &#187; List.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">6</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function List(title, prop) {
+    //inutile pour l'instant
+    this.isBeingEdited = false;
+    this.name = title;
+    this.proprietor = prop;
+    this.products = [];
+    this.description = "";
+    //La liste de partage
+    this.sharedWith = [];
+    //Au cas où l'utilisateur possèderait une liste avec le même nom, on met un compteur pour les différencier.
+    //Si tu le supprime, supprime-le aussi dans MessageManager et PageManager.
+    this.notAlone = 0;
+    this.id = Tools.getRandomString();
+}
+&nbsp;
+List.prototype = {
+&nbsp;
+    getId: function () {
+        return this.id;
+    },
+&nbsp;
+    getName: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return this.name;</span>
+    },
+&nbsp;
+    getProprietor: function () {
+        return this.proprietor;
+    },
+&nbsp;
+    getSharedWith: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return this.sharedWith;</span>
+    },
+&nbsp;
+    getDescription: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return this.description;</span>
+    },
+&nbsp;
+    getProducts: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return this.products;</span>
+    },
+&nbsp;
+    /*Permet d'ajouter le produit product à la liste de produits.
+    *@param product: le produit à ajouter
+    *@return true si le produit a été ajouté, false sinon.
+    */
+    addProduct: function (product) {
+        if (this.products.indexOf(product) &gt; -1) {
+            return false;
+        } else {
+            this.products.push(product);
+            return true;
+        }
+    },
+&nbsp;
+    /*Permet d'ajouter l'utilisateur user à la liste de partage (sharedWith)
+    *@return true si user a été ajouté, false sinon.
+    */
+    addUser: function (user) {
+        if (!this.isSharedWith(user)) {
+            this.sharedWith.push(user);
+            return true;
+        }
+        return false;
+    },
+&nbsp;
+    /*Retourne l'indice de l'utilisateur user si celui-ci est présent dans la liste de partage (sharedWith).
+    *@param user: l'utilisateur
+    *@return la position de user dans la liste de partage, -1 si il n'en fait pas partie.
+    */
+    getUser: function (user) {
+        for (var i = 0; i &lt; this.sharedWith.length; i++) {
+            var u = this.sharedWith[i];
+            if (u.equals(user)) {
+                return i;
+            }
+        }
+        return -1;
+    },
+&nbsp;
+    /*Permet de savoir si user fait partie de la liste de partage (sharedWith).
+    *@param user : l'utilisateur dont on veut contrôler l'accès à la liste
+    *@return true si user est proprietaire ou membre de la liste sharedWit, false sinon.
+    */
+    isSharedWith: function (user) {
+        var i = this.getUser(user);
+        if (i &gt; -1)
+            return true;
+        return this.proprietor.equals(user);
+    },
+&nbsp;
+    /*Permet de supprimer l'utilisateur de la liste de partage (sharedWith).
+    *@param user : l'objet User à retirer
+    *@return true si user à été retiré, false sinon
+    */
+    removeUser: function (user) {
+        if (this.isSharedWith(user) &amp;&amp; !this.proprietor.equals(user)) {
+            var aux = this.getUser(user);
+            this.sharedWith.splice(aux, 1);
+            return true;
+        }
+        return false;
+    },
+&nbsp;
+    setDescription: <span class="fstat-no" title="function not covered" >function (desc) {</span>
+<span class="cstat-no" title="statement not covered" >        this.description = desc;</span>
+    },
+&nbsp;
+    /*Retourne un élément HTML permettant de l'afficher la liste dans la page.
+    *@param list - l'objet liste à transformer
+    */
+    toHtml: <span class="fstat-no" title="function not covered" >function (display) {</span>
+        'use strict';
+        //Fieldset
+<span class="cstat-no" title="statement not covered" >        var l = Tools.createStyledElement("fieldset",</span>
+            "border-top-color", this.proprietor.getColor(),
+            "display", display
+        );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var legend = this.notAlone === 0 ? this.name : this.name + " (" + this.notAlone + ")";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        Tools.assignAttributes(l,</span>
+            "id", this.id,
+            "classList", "card",
+            "title", legend);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var spans = "";</span>
+<span class="cstat-no" title="statement not covered" >        for (var i = 0; i &lt; this.products.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >            spans += "" + "&lt;span class=\"prod\"&gt;" + this.products[i] + "&lt;\/span&gt;";</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        l.innerHTML = "&lt;legend title=\"" + legend + "\" style=\"background-color: " + this.proprietor.getColor() + ";\"&gt;" + legend + "&lt;\/legend&gt;" + "&lt;div class=\"card__edit\"&gt;" + "&lt;label class=\"btn\" for=\"modal-one\" onclick=\"Tools.editList('" + this.id.trim() + "');\"&gt;EDIT&lt;\/label&gt;" + "&lt;\/div&gt;" + "&lt;div class=\"card__body\"&gt;" + "&lt;div class=\"card__subtitle\"&gt;Description&lt;\/div&gt;" + "&lt;p class=\"card__description\"&gt;" + this.description + "&lt;\/p&gt;" + "&lt;div class=\"card__subtitle\"&gt;Produits&lt;\/div&gt;" + "&lt;p class=\"card__products\"&gt;" + spans + "&lt;\/p&gt;" + "&lt;\/div&gt;";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return l;</span>
+    },
+&nbsp;
+    /**Compare 2 listes en comparant leurs IDs, leurs proprietaire et leurs nom.
+    *
+    */
+    equals: function (list) {
+        return this.id === list.getId() &amp;&amp; this.getProprietor().equals(list.getProprietor()) &amp;&amp; this.name === list.name;
+    },
+&nbsp;
+    forJSON: <span class="fstat-no" title="function not covered" >function(){</span>
+<span class="cstat-no" title="statement not covered" >        var res = {};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        res.id = this.id;</span>
+<span class="cstat-no" title="statement not covered" >        res.name = this.name;</span>
+<span class="cstat-no" title="statement not covered" >        res.description = this.description;</span>
+<span class="cstat-no" title="statement not covered" >        res.products = this.products;</span>
+<span class="cstat-no" title="statement not covered" >        res.proprietor = this.proprietor.forJSON();</span>
+<span class="cstat-no" title="statement not covered" >        res.sharedWith = [];</span>
+<span class="cstat-no" title="statement not covered" >        for(var i=0;i&lt;this.sharedWith.length;i++)</span>
+<span class="cstat-no" title="statement not covered" >            res.sharedWith.push(this.sharedWith[i].forJSON());</span>
+<span class="cstat-no" title="statement not covered" >        res.notAlone = this.notAlone;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return res;</span>
+    }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Dec 10 2015 16:43:49 GMT+0100 (CET)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
