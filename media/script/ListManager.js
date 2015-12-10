@@ -59,8 +59,8 @@ ListManager.prototype = {
             return -1;
 
         } else if (typeof list === "string") {
-            for (var i = 0; this.lists.length; i++) {
-                var l = this.lists[i];
+            for ( i = 0; this.lists.length; i++) {
+                 l = this.lists[i];
                 if (l.getId() === list)
                     return i;
             }
