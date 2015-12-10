@@ -79,10 +79,10 @@ UserManager.prototype = {
             this.unavailablePseudo.splice(this.unavailablePseudo.indexOf(u.getName()), 1);
             //            this.colors.push(user.getColor());
             return true;
-        } else false;
+        } else return false;
     },
     
     isAvailable: function (pseudo){
         return this.unavailablePseudo.indexOf(pseudo) === -1;
     }
-}
+};
