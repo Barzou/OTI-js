@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for script/UserManager.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">script/UserManager.js</span></h1>
+    <h2>
+        Statements: <span class="metric">75.61% <small>(31 / 41)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">61.11% <small>(11 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">62.5% <small>(5 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">75.61% <small>(31 / 41)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">script/</a> &#187; UserManager.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function UserManager() {
+    this.doc = "Association socketId (key) - name (value) for all clients in the room.\n";
+    //Tableau d'objets de type User
+    this.users = new Array();
+    //tableau des couleurs utilisées en hexa
+    this.colors = new Array();
+    //tableau des pseudos indisponibles
+    this.unavailablePseudo = [];
+}
+&nbsp;
+/*Cette classe permet de répertorier l'ensemble des utilisateurs présents dans la room.
+*Dès qu'un message est reçu, si l'envoyeur n'est pas dans l'objet l'UserManager alors on l'ajoute.
+*/
+UserManager.prototype = {
+&nbsp;
+    initialize: <span class="fstat-no" title="function not covered" >function (i) {</span>
+<span class="cstat-no" title="statement not covered" >        this.colors = Tools.getRandomColors(i);</span>
+    },
+    
+    getNbUser: <span class="fstat-no" title="function not covered" >function (){</span>
+<span class="cstat-no" title="statement not covered" >        return this.users.length;</span>
+    },
+    
+    addUser: function (user) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (user.getColor() === undefined) {
+            var color = this.colors.splice(Math.random() * this.colors.length, 1)[0];
+            user.setColor(color);
+        }
+        this.users.push(user);
+        this.unavailablePseudo.push(user.getName());
+        return true;
+    },
+&nbsp;
+    /*Retourne la position de l'utilisateur dans le UserManager
+    *@param user: soit un objet User soit une chaine de caractère réprésentant le socket d'un utilisateur
+    *@return la position de l'utilisateur user dans le UserManager, -1 si user n'y est pas.
+    */
+    exists: function (user) {
+        if (typeof user === "object") {
+            for (var i = 0; i &lt; this.users.length; i++) {
+                var u = this.users[i];
+                if (u.equals(user))
+                    return i;
+            }
+            return -1;
+        } else <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof user === "string") { //socketid
+            for (var i = 0; i &lt; this.users.length; i++) {
+                var u = this.users[i];
+                if (u.getSocket() === user)
+                    return i;
+            }
+            return -1;
+        }
+    },
+&nbsp;
+    /*Retourne l'objet de type User correspondant à la socket de l'utilisateur ou à sa position dans this.users.
+    *@param id: le socket ou l'identifiant de l'utilisateur.
+    */
+    getUser: function (id) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof id === "string") { //param.: socketId
+            for (var i = 0; i &lt; this.users.length; i++) {
+                var u = this.users[i];
+                if (u.getSocket() === id)
+                    return u;
+            }
+            return undefined;
+        } else <span class="cstat-no" title="statement not covered" >if (typeof id === "number") { //Param.: indice dans le tableau this.users</span>
+<span class="cstat-no" title="statement not covered" >            return this.users[id];</span>
+        }
+    },
+&nbsp;
+    /*Permet de retirer l'utilisateur user du UserManager
+    *@param user: le nom ou la position dans la tableau de l'utilisateur à retirer
+    */
+    removeUser: <span class="fstat-no" title="function not covered" >function (user) {</span>
+<span class="cstat-no" title="statement not covered" >        var i = this.getUser(user);</span>
+<span class="cstat-no" title="statement not covered" >        if (i &gt; -1) {</span>
+<span class="cstat-no" title="statement not covered" >            var u = this.users.splice(i, 1);</span>
+<span class="cstat-no" title="statement not covered" >            this.unavailablePseudo.splice(this.unavailablePseudo.indexOf(u.getName()), 1);</span>
+            //            this.colors.push(user.getColor());
+<span class="cstat-no" title="statement not covered" >            return true;</span>
+        } else <span class="cstat-no" title="statement not covered" >return false;</span>
+    },
+    
+    isAvailable: function (pseudo){
+        return this.unavailablePseudo.indexOf(pseudo) === -1;
+    }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Dec 10 2015 18:27:36 GMT+0100 (CET)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
