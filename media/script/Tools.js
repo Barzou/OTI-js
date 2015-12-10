@@ -133,8 +133,8 @@ Tools = {
             var response = prompt("Vous avez pressez la touche f5.\nVous risquez de vous déconnecter, voulez-vous continuer?(o/n)");
             if ((response !== "o" && response !== "O")){
                 e.preventDefault();
-                console.log(e.keyCode);
-//                console.log(response !== "o");
+
+//
             }
             else {
                 cobra.sendMessage(Tools.msgCreator.leftMsg(), room, false);
@@ -231,17 +231,17 @@ var wasPressed = false;
 Tools.include('media/script/List.js', function () {});
 Tools.include("media/script/ListManager.js", function () {
     //    Tools.lm = new ListManager();
-    //        console.log("ListManager chargé: " + Tools.lm);
+    //
 });
 Tools.include('media/script/User.js', function () {});
 Tools.include('media/script/PageManager.js', function () {
     Tools.page = new PageManager();
-    //        console.log("PageManager chargé: " + Tools.page);
+    //
 });
 Tools.include('media/script/UserManager.js', function () {
     Tools.users = new UserManager();
     Tools.users.initialize(100);
-    //        console.log('UsersManager chargé: ' + Tools.users);
+    //
 });
 Tools.include('media/script/MessageManager.js', function () {
     Tools.msgCreator = new MessageManager();

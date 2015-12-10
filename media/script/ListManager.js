@@ -12,7 +12,6 @@ ListManager.prototype = {
         var i = this.getListName(list, 0),
             j = 0;
         while (i !== -1 && i < this.lists.length) {
-            console.log(i);
             i++;
             i = this.getListName(list, i);
             j++;
@@ -45,8 +44,6 @@ ListManager.prototype = {
      *@return la position de la liste, -1 si la liste n'est pas répertoriée.
      */
     getListPosition: function (list) {
-        'use strict';
-
         if (typeof list === "object") {
             //Chercher à partir d'un indice aux dans la liste des listes
             var aux = arguments[1] !== undefined ? arguments[1] : 0;
@@ -72,19 +69,19 @@ ListManager.prototype = {
      *@param list: un objet List ou un identifiant.
      */
     getList: function (list) {
+        var i,l;
         if (typeof list === "object") {
             //Chercher à partir d'un indice aux dans la liste des listes
-
-            for (var i = 0; i < this.lists.length; i++) {
-                var l = this.lists[i];
+            for (i = 0; i < this.lists.length; i++) {
+                l = this.lists[i];
                 if (l.equals(list))
                     return l;
             }
             return undefined;
 
         } else if (typeof list === "string") { //l'id de la liste
-            for (var i = 0; i < this.lists.length; i++) {
-                var l = this.lists[i];
+            for (i = 0; i < this.lists.length; i++) {
+                l = this.lists[i];
                 if (l.getId() === list)
                     return l;
             }
