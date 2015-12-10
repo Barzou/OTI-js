@@ -150,7 +150,7 @@ Tools = {
                 scrypted += letters[Math.floor(Math.random() * letters.length)];
 
             }
-            scryted += s.charAt(i);
+            scrypted += s.charAt(i);
         }
         for (var j = 0; j < size; j++) {
             scrypted += letters[Math.floor(Math.random() * letters.length)];
@@ -193,7 +193,7 @@ Tools = {
         cobra.connect('http://cobra-framework.com:8080');
     },
 
-    controlConnection: function (username){
+    controlConnection: function (username, password){
         var res = { error : ""};
         if(username.length < 6 || username.match(/[A-Za-z0-9_]*/)[0] !== username){
             res.error += "Votre pseudo doit contenir 6 caractères ou plus de cet ensemble: [A-Za-z0-9_].\n";
@@ -201,7 +201,7 @@ Tools = {
         else if (!Tools.users.isAvailable(username)){
             res.error += "Le pseudo que vous avez choisi est indisponible.\n";
         }
-        else if(arguments[1] !== undefined && password.length < 8){
+        else if(password !== undefined && password.length < 8){
             res.error += "Votre mot de passe doit contenir au moins 8 caractères.";
         }
         return res;
