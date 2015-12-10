@@ -16,8 +16,9 @@ module.exports=function(grunt){
                     urls: [
                         'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/cobra_connect.html',
                         'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/tools_test.html',
-                        'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/list_test.html'
-                        'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/listmanager_test.html'
+                        'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/list_test.html',
+                        'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/listmanager_test.html',
+                        'http://127.0.0.1:<%= connect.testcoverage.options.port %>/test/user_test.html'
                     ]
                 }
             }

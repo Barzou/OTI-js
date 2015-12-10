@@ -66,7 +66,7 @@ User.prototype = {
     */
     shareWith: function (id, user) {
         var l = this.lm.getList(id);
-        if (l.getProprietor().equals(this))
+        if (l && l.getProprietor().equals(this))
             return l.addUser(user);
         return false;
     },
